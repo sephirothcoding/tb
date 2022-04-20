@@ -1,0 +1,118 @@
+
+
+
+
+
+
+}
+p {
+  letter-spacing: 0.5em;
+  display: inline-block;
+  border: 4px double rgba(255, 255, 255, 0.25);
+  border-width: 4px 0;
+  padding: 1.5em 0em;
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  width: 40em;
+  margin: 0 0 0 -20em;
+}
+p span {
+  font: 700 4em/1 "Oswald", sans-serif;
+  letter-spacing: 0;
+  padding: 0.25em 0 0.325em;
+  display: block;
+  margin: 0 auto;
+  text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+  /* Clip Background Image */
+  background: linear-gradient(90deg, rgba(96,35,108,1) 0%, rgba(180,92,218,1) 48%, rgba(233,178,245,1) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* Animate Background Image */
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: aitf 80s linear infinite;
+  /* Activate hardware acceleration for smoother animations */
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+}
+
+@-webkit-keyframes kelebeks-fall{0%{top:-10%}100%{top:100%}}@-webkit-keyframes kelebeks-shake{0%{-webkit-transform:translateX(0px);transform:translateX(0px)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}100%{-webkit-transform:translateX(0px);transform:translateX(0px)}}@keyframes kelebeks-fall{0%{top:-10%}100%{top:100%}}@keyframes kelebeks-shake{0%{transform:translateX(0px)}50%{transform:translateX(80px)}100%{transform:translateX(0px)}}.kelebek{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:kelebeks-fall,kelebeks-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:kelebeks-fall,kelebeks-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.kelebek:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.kelebek:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.kelebek:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.kelebek:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.kelebek:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.kelebek:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.kelebek:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.kelebek:nth-of-type(7){left:70%;-webkit-animation-delay:https://proxy.everskies.com/a/https://proxy.everskies.com/a/2.5s,1s;animation-delay:https://proxy.everskies.com/a/https://proxy.everskies.com/a/2.5s,1s}.kelebek:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.kelebek:nth-of-type(9){left:90%;-webkit-animation-delay:3s,https://proxy.everskies.com/a/https://proxy.everskies.com/a/1.5s;animation-delay:3s,https://proxy.everskies.com/a/https://proxy.everskies.com/a/1.5s}
+/* Demo Purpose Only*/
+.demo {
+  font-family: 'Raleway', sans-serif;
+	color:#fff;
+    display: block;
+    margin: 0 auto;
+    padding: 15px 0;
+    text-align: center;
+}
+.demo a{
+  font-family: 'Raleway', sans-serif;
+color: #000;		
+}
+body{
+  font-family:var(--font);
+  font-size:16px;
+  overflow-x:hidden;
+  min-height:100vh;
+  color:#fff
+}
+a,span{
+  display:inline-block
+}
+a{
+  text-decoration:None
+}
+ul{
+  list-style:none
+}
+i{
+  display:flex;
+  align-items:center;
+  justify-content:center
+}
+
+.container-fluid{
+  background:#111;
+  height:820px;
+  min-height:100vh;
+  position:relative;
+  overflow:hidden
+}
+
+.controll{
+	position:fixed;
+	width:100px;
+	height:100px;
+	bottom:50px;
+	right:50px;
+	cursor:pointer;
+	z-index:1000
+		
+}
+.controll:before{
+	width:100px;
+	height:100px;
+	box-shadow:0 0 0 5px #fff;
+	border-radius:50%;
+	top:calc(50% - 50px);
+	left:calc(50% - 50px);
+	animation:pulse .5s ease-out infinite
+		
+}
+@keyframes pulse{
+	0%{
+		transform:scale(0);
+		box-shadow:0 0 0 0 #fff
+}
+	100%{
+		transform:scale(1);
+		box-shadow:0 0 0 5px #99579e
+}
+}
+.controll i,i.fa-play,i.fa-stop{
+	width:100px;
+	height:100px;
+	display:flex;
+	font-size:1.3rem
+}
